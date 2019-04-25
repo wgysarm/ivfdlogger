@@ -1,0 +1,12 @@
+#ifndef IVFDLOGGER_GLOBAL_H
+#define IVFDLOGGER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(IVFDLOGGER_LIBRARY)
+#  define IVFDLOGGERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define IVFDLOGGERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // IVFDLOGGER_GLOBAL_H
